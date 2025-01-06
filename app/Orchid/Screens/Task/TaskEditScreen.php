@@ -107,37 +107,6 @@ class TaskEditScreen extends Screen
                         ->canSee($this->task->exists)
                         ->method('save')
                 ),
-            Layout::block(TaskEditLayout::class)
-                ->title(__('Task Status'))
-                ->description(__('Update your task Status.'))
-                ->commands(
-                    Button::make(__('Save'))
-                        ->type(Color::BASIC)
-                        ->icon('bs.check-circle')
-                        ->canSee($this->task->exists)
-                        ->method('save')
-                ),
-            Layout::block(TaskEditLayout::class)
-                ->title(__('Task Progress'))
-                ->description(__('Update your task Progress.'))
-                ->commands(
-                    Button::make(__('Save'))
-                        ->type(Color::BASIC)
-                        ->icon('bs.check-circle')
-                        ->canSee($this->task->exists)
-                        ->method('save')
-                ),
-
-            Layout::block(TaskEditLayout::class)
-                ->title(__('Task Due Date'))
-                ->description(__('Update your task due date.'))
-                ->commands(
-                    Button::make(__('Save'))
-                        ->type(Color::BASIC)
-                        ->icon('bs.check-circle')
-                        ->canSee($this->task->exists)
-                        ->method('save')
-                ),
         ];
     }
 
